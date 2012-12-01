@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script data-main="main" src="../require.js"></script>
+	<style>
+		#split {
+			height: 200px;
+			border-top: 2px solid #ccc;
+			margin-top: 20px;
+			padding: 20px;
+		}
+
+		#info {
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Splittr A/B Testing Hook</h1>
+		<p>Changing the values below will attempt to load different files via require</p>
+		<textarea id="config" cols="50" rows="10">
+{
+	"test": "foo",
+	"branch": "bar"
+}
+		</textarea><br />
+		<button id="reload">Reload this page with the params above</button>
+		<div id="info"></div>
+		<div id="split"></div>
+	</div>
+</body>
+</html>
